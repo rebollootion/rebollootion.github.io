@@ -1,163 +1,304 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Rebollootion - Contacto" />
-		<title>Contacto | Rebollootion</title>
-		<link rel="stylesheet" href="../assets/css/styles.css" />
-		<link rel="stylesheet" href="../assets/css/pages.css" />
-		<link rel="stylesheet" href="../assets/css/header.css" />
-		<link rel="stylesheet" href="../assets/css/footer.css" />
-		<!-- EmailJS SDK -->
-		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	</head>
-	<body>
-		<div id="header-placeholder"></div>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Rebollution - Contact us - Let's transform your technology"
+        />
+        <meta name="keywords" content="contact, consulting, technology, rebollution" />
+        <meta name="author" content="Rebollution" />
+        <title data-i18n="contact-page-title">Contact Us</title>
 
-		<main class="subpage-main">
-			<div class="container">
-				<div class="subpage-header">
-					<h1 class="subpage-title" data-i18n="contact-page-title">Contacto</h1>
-					<p class="subpage-subtitle" data-i18n="contact-page-subtitle">
-						¿Tienes un proyecto en mente? Hablemos sobre cómo podemos ayudarte
-					</p>
-				</div>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/header.css" />
+        <link rel="stylesheet" href="../assets/css/pages.css" />
+        <link rel="stylesheet" href="../assets/css/footer.css" />
+    </head>
 
-				<div class="contact-grid">
-					<!-- Formulario -->
-					<div class="contact-form-container">
-						<form id="contactForm" class="contact-form">
-							<div class="form-group">
-								<label for="name" data-i18n="form-name">Nombre *</label>
-								<input
-									type="text"
-									id="name"
-									name="name"
-									required
-									data-i18n-placeholder="form-name-placeholder"
-								/>
-							</div>
+    <body>
+        <!-- Header Component -->
+        <div id="header-placeholder"></div>
 
-							<div class="form-group">
-								<label for="email" data-i18n="form-email">Email *</label>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									required
-									data-i18n-placeholder="form-email-placeholder"
-								/>
-							</div>
+        <!-- Main content -->
+        <main class="subpage-main">
+            <div class="container">
+                <!-- Page header -->
+                <div class="subpage-header">
+                    <h1 class="subpage-title" data-i18n="contact-page-title">
+                        Contact Us
+                    </h1>
+                    <p class="subpage-subtitle" data-i18n="contact-page-subtitle">
+                        Get in touch with our team. We respond within 24 hours.
+                    </p>
+                </div>
 
-							<div class="form-group">
-								<label for="company" data-i18n="form-company">Empresa</label>
-								<input
-									type="text"
-									id="company"
-									name="company"
-									data-i18n-placeholder="form-company-placeholder"
-								/>
-							</div>
+                <!-- Contact container -->
+                <div class="contact-container">
+                    <!-- Contact form -->
+                    <form class="contact-form" id="contactForm">
+                        <!-- Name field -->
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-i18n="form-name"
+                                >Full Name</label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-input"
+                                placeholder="Your full name"
+                                data-i18n-placeholder="form-name-placeholder"
+                                required
+                            />
+                        </div>
 
-							<div class="form-group">
-								<label for="phone" data-i18n="form-phone">Teléfono</label>
-								<input
-									type="tel"
-									id="phone"
-									name="phone"
-									data-i18n-placeholder="form-phone-placeholder"
-								/>
-							</div>
+                        <!-- Email field -->
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-i18n="form-email"
+                                >Email Address</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input"
+                                placeholder="your.email@company.com"
+                                data-i18n-placeholder="form-email-placeholder"
+                                required
+                            />
+                        </div>
 
-							<div class="form-group">
-								<label for="sector" data-i18n="form-sector"
-									>Sector de interés</label
-								>
-								<select id="sector" name="sector">
-									<option value="" data-i18n="form-sector-select">
-										Selecciona un sector
-									</option>
-									<option value="tecnologia" data-i18n="form-sector-tech">
-										Tecnología
-									</option>
-									<option value="servicios" data-i18n="form-sector-services">
-										Servicios Técnicos
-									</option>
-									<option value="negocio" data-i18n="form-sector-business">
-										Negocio Internacional
-									</option>
-									<option value="otro" data-i18n="form-sector-other">
-										Otro
-									</option>
-								</select>
-							</div>
+                        <!-- Company field -->
+                        <div class="form-group">
+                            <label for="company" class="form-label" data-i18n="form-company"
+                                >Company Name</label
+                            >
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                class="form-input"
+                                placeholder="Your company"
+                                data-i18n-placeholder="form-company-placeholder"
+                            />
+                        </div>
 
-							<div class="form-group full-width">
-								<label for="message" data-i18n="form-message">Mensaje *</label>
-								<textarea
-									id="message"
-									name="message"
-									rows="6"
-									required
-									data-i18n-placeholder="form-message-placeholder"
-								></textarea>
-							</div>
+                        <!-- Phone field -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label" data-i18n="form-phone"
+                                >Phone Number</label
+                            >
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-input"
+                                placeholder="+34 123 456 789"
+                                data-i18n-placeholder="form-phone-placeholder"
+                            />
+                        </div>
 
-							<button type="submit" class="submit-btn" id="submitBtn">
-								<span data-i18n="form-submit">Enviar mensaje</span>
-							</button>
+                        <!-- Sector field -->
+                        <div class="form-group">
+                            <label for="sector" class="form-label" data-i18n="form-sector"
+                                >Interest Sector</label
+                            >
+                            <select
+                                id="sector"
+                                name="sector"
+                                class="form-select"
+                                data-i18n-value="form-sector-select"
+                            >
+                                <option value="" data-i18n="form-sector-select">
+                                    Select a sector
+                                </option>
+                                <option value="tech" data-i18n="form-sector-tech">
+                                    Technology
+                                </option>
+                                <option value="services" data-i18n="form-sector-services">
+                                    Technical Services
+                                </option>
+                                <option value="business" data-i18n="form-sector-business">
+                                    International Business
+                                </option>
+                                <option value="other" data-i18n="form-sector-other">Other</option>
+                            </select>
+                        </div>
 
-							<div id="formStatus" class="form-status"></div>
-						</form>
-					</div>
+                        <!-- Project type field -->
+                        <div class="form-group">
+                            <label for="project-type" class="form-label" data-i18n="form-project-type"
+                                >Project Type</label
+                            >
+                            <select
+                                id="project-type"
+                                name="projectType"
+                                class="form-select"
+                                data-i18n-value="form-project-type-select"
+                            >
+                                <option value="" data-i18n="form-project-type-select">
+                                    Select project type
+                                </option>
+                                <option value="consulting" data-i18n="form-project-consulting">
+                                    Consulting
+                                </option>
+                                <option value="implementation" data-i18n="form-project-implementation">
+                                    Implementation
+                                </option>
+                                <option value="audit" data-i18n="form-project-audit">
+                                    Audit
+                                </option>
+                                <option value="training" data-i18n="form-project-training">
+                                    Training
+                                </option>
+                                <option value="partnership" data-i18n="form-project-partnership">
+                                    Partnership
+                                </option>
+                            </select>
+                        </div>
 
-					<!-- Información de contacto -->
-					<div class="contact-info-container">
-						<div class="info-card">
-							<h3 data-i18n="contact-email-title">Email</h3>
-							<a href="mailto:contacto@rebollootion.com"
-								>contacto@rebollootion.com</a
-							>
-						</div>
+                        <!-- Budget field -->
+                        <div class="form-group">
+                            <label for="budget" class="form-label" data-i18n="form-budget"
+                                >Estimated Budget</label
+                            >
+                            <select
+                                id="budget"
+                                name="budget"
+                                class="form-select"
+                                data-i18n-value="form-budget-select"
+                            >
+                                <option value="" data-i18n="form-budget-select">
+                                    Select budget range
+                                </option>
+                                <option value="under-10k" data-i18n="form-budget-under">
+                                    Under 10,000 EUR
+                                </option>
+                                <option value="10k-50k" data-i18n="form-budget-10-50">
+                                    10,000 - 50,000 EUR
+                                </option>
+                                <option value="50k-100k" data-i18n="form-budget-50-100">
+                                    50,000 - 100,000 EUR
+                                </option>
+                                <option value="100k-500k" data-i18n="form-budget-100-500">
+                                    100,000 - 500,000 EUR
+                                </option>
+                                <option value="500k-plus" data-i18n="form-budget-500-plus">
+                                    500,000+ EUR
+                                </option>
+                            </select>
+                        </div>
 
-						<div class="info-card">
-							<h3 data-i18n="contact-locations-title">Nuestras oficinas</h3>
-							<div class="locations-list">
-								<div class="location-item">
-									<strong>España (HQ)</strong>
-									<p>Gorraiz, Navarra</p>
-								</div>
-								<div class="location-item">
-									<strong>España</strong>
-									<p>Algorta, Bizkaia</p>
-								</div>
-								<div class="location-item">
-									<strong>China</strong>
-									<p>Shanghai</p>
-								</div>
-								<div class="location-item">
-									<strong>India</strong>
-									<p>Chennai</p>
-								</div>
-							</div>
-						</div>
+                        <!-- Message field -->
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-i18n="form-message"
+                                >Project Details</label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form-textarea"
+                                placeholder="Tell us about your project..."
+                                data-i18n-placeholder="form-message-placeholder"
+                                required
+                            ></textarea>
+                        </div>
 
-						<div class="info-card">
-							<h3 data-i18n="contact-response-title">Tiempo de respuesta</h3>
-							<p data-i18n="contact-response-text">
-								Respondemos en menos de 24 horas en días laborables
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
+                        <!-- Submit button -->
+                        <button
+                            type="submit"
+                            class="form-button"
+                            id="submitBtn"
+                            data-i18n="form-submit"
+                        >
+                            Send Message
+                        </button>
 
-		<div id="footer-placeholder"></div>
+                        <!-- Form messages -->
+                        <div id="formMessage" class="form-message" style="display: none"></div>
+                    </form>
 
-		<script src="../assets/js/components.js"></script>
-		<script src="../assets/js/script.js"></script>
-		<script src="../assets/js/emailjs-config.js"></script>
-	</body>
+                    <!-- Contact information -->
+                    <div class="contact-info">
+                        <h3 data-i18n="contact-alternative-title">
+                            Prefer to contact us directly?
+                        </h3>
+                        <p data-i18n="contact-email-label">Email:</p>
+                        <p>
+                            <a href="mailto:contacto@rebollution.com">contacto@rebollution.com</a>
+                        </p>
+                        <p data-i18n="contact-hours-label">Service Hours:</p>
+                        <p data-i18n="contact-hours">
+                            Monday - Friday: 9:00 AM - 6:00 PM (CET)
+                        </p>
+                        <p data-i18n="contact-response">Response time: Less than 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Component -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Scripts -->
+        <script src="../assets/js/components.js"></script>
+        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/emailjs-config.js"></script>
+        <script>
+            // Form handling
+            document.getElementById('contactForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const submitBtn = document.getElementById('submitBtn');
+                const formMessage = document.getElementById('formMessage');
+                const originalText = submitBtn.getAttribute('data-i18n');
+                
+                submitBtn.disabled = true;
+                submitBtn.textContent = submitBtn.getAttribute('data-i18n') || 'Sending...';
+
+                try {
+                    const formData = new FormData(e.target);
+                    const data = Object.fromEntries(formData);
+
+                    // Send email using EmailJS
+                    await emailjs.send(
+                        'service_YOUR_SERVICE_ID',
+                        'template_YOUR_TEMPLATE_ID',
+                        {
+                            from_name: data.name,
+                            from_email: data.email,
+                            company: data.company,
+                            phone: data.phone,
+                            sector: data.sector,
+                            project_type: data.projectType,
+                            budget: data.budget,
+                            message: data.message
+                        }
+                    );
+
+                    // Success message
+                    formMessage.classList.remove('error');
+                    formMessage.classList.add('success');
+                    formMessage.textContent = 'Message sent successfully! We will respond within 24 hours.';
+                    formMessage.style.display = 'block';
+                    
+                    // Reset form
+                    e.target.reset();
+                } catch (error) {
+                    // Error message
+                    formMessage.classList.remove('success');
+                    formMessage.classList.add('error');
+                    formMessage.textContent = 'Failed to send message. Please try again or email us directly.';
+                    formMessage.style.display = 'block';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }
+            });
+        </script>
+    </body>
 </html>
