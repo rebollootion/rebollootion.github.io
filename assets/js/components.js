@@ -272,3 +272,17 @@ function initMobileMenu() {
 
 	console.log("✅ Mobile menu initialized");
 }
+
+// ============================================
+// TRADUCCIÓN DE PÁRRAFOS CON data-i18n
+// ============================================
+function translateParagraphs() {
+	const elements = document.querySelectorAll("[data-i18n]");
+	elements.forEach((element) => {
+		const key = element.getAttribute("data-i18n");
+		if (translations[currentLanguage] && translations[currentLanguage][key]) {
+			// Para párrafos, usar textContent; para otros, usar textContent
+			element.textContent = translations[currentLanguage][key];
+		}
+	});
+}

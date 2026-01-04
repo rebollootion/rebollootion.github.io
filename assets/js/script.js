@@ -5,7 +5,7 @@
 // Configuración de idiomas
 const LANG_CONFIG = {
 	defaultLang: "en",
-	supportedLangs: ["es", "en", "cn"],
+	supportedLangs: ["es", "en", "cn", "hi"],
 };
 
 // Estado de la aplicación
@@ -85,6 +85,13 @@ async function changeLanguage(lang) {
 			option.getAttribute("data-lang") === lang
 		);
 	});
+
+	document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+		const key = element.getAttribute("data-i18n-placeholder");
+		if (currentTranslations[key]) {
+			element.placeholder = currentTranslations[key];
+		}
+	});
 }
 
 // ============================================
@@ -118,19 +125,19 @@ document.addEventListener("DOMContentLoaded", () => {
 // ============================================
 
 function initHeroVideo() {
-    const heroVideo = document.querySelector('.hero-video');
-    
-    if (!heroVideo) return;
+	const heroVideo = document.querySelector(".hero-video");
 
-    // Ensure video plays on mobile
-    heroVideo.play().catch(() => {
-        console.log('Video autoplay prevented by browser');
-    });
+	if (!heroVideo) return;
 
-    console.log('✅ Hero video initialized');
+	// Ensure video plays on mobile
+	heroVideo.play().catch(() => {
+		console.log("Video autoplay prevented by browser");
+	});
+
+	console.log("✅ Hero video initialized");
 }
 
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    initHeroVideo();
+document.addEventListener("DOMContentLoaded", () => {
+	initHeroVideo();
 });
