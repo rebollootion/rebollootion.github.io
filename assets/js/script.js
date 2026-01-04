@@ -112,3 +112,25 @@ document.addEventListener("DOMContentLoaded", () => {
 	initSmoothScroll();
 	console.log("📍 Lang path detected:", getLangPath());
 });
+
+// ============================================
+// Initialize video on page load
+// ============================================
+
+function initHeroVideo() {
+    const heroVideo = document.querySelector('.hero-video');
+    
+    if (!heroVideo) return;
+
+    // Ensure video plays on mobile
+    heroVideo.play().catch(() => {
+        console.log('Video autoplay prevented by browser');
+    });
+
+    console.log('✅ Hero video initialized');
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initHeroVideo();
+});

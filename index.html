@@ -30,19 +30,38 @@
 
 		<!-- Main content -->
 		<main>
-			<!-- Hero section -->
+			<!-- Hero section with video background -->
 			<section class="hero">
+				<!-- Video background -->
+				<video
+					class="hero-video"
+					autoplay
+					muted
+					loop
+					playsinline
+				>
+					<source
+						src="https://cdn.pixabay.com/video/2022/11/26/140578-775389242_large.mp4"
+						type="video/mp4"
+					/>
+					Your browser does not support the video tag.
+				</video>
+
+				<!-- Overlay with 80% transparency -->
+				<div class="hero-overlay"></div>
+
+				<!-- Hero content -->
 				<div class="hero-content">
-					<h1>
-						<span data-i18n="hero-title">Innovación Tecnológica</span><br />
+					<h1 class="hero-title">
+						<span data-i18n="hero-title">Technological Innovation</span><br />
 						<span class="gradient-text" data-i18n="hero-subtitle-line"
-							>para el Futuro</span
+							>for the Future</span
 						>
 					</h1>
 					<p class="hero-subtitle" data-i18n="hero-description">
-						Consultoría tecnológica especializada en energías sostenibles,
-						electrónica avanzada y servicios técnicos profesionales.
-						Transformamos ideas en soluciones reales.
+						Technology consulting firm specialized in sustainable energy,
+						advanced electronics and professional technical services. We
+						transform ideas into real solutions.
 					</p>
 					<a
 						href="./pages/contacto.html"
