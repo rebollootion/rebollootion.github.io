@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Rebollootion - Contacto" />
+		<title>Contacto | Rebollootion</title>
+		<link rel="stylesheet" href="../assets/css/styles.css" />
+		<link rel="stylesheet" href="../assets/css/pages.css" />
+		<!-- EmailJS SDK -->
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	</head>
+	<body>
+		<div id="header-placeholder"></div>
+
+		<main class="subpage-main">
+			<div class="container">
+				<div class="subpage-header">
+					<h1 class="subpage-title" data-i18n="contact-page-title">Contacto</h1>
+					<p class="subpage-subtitle" data-i18n="contact-page-subtitle">
+						¿Tienes un proyecto en mente? Hablemos sobre cómo podemos ayudarte
+					</p>
+				</div>
+
+				<div class="contact-grid">
+					<!-- Formulario -->
+					<div class="contact-form-container">
+						<form id="contactForm" class="contact-form">
+							<div class="form-group">
+								<label for="name" data-i18n="form-name">Nombre *</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									required
+									data-i18n-placeholder="form-name-placeholder"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="email" data-i18n="form-email">Email *</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									required
+									data-i18n-placeholder="form-email-placeholder"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="company" data-i18n="form-company">Empresa</label>
+								<input
+									type="text"
+									id="company"
+									name="company"
+									data-i18n-placeholder="form-company-placeholder"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="phone" data-i18n="form-phone">Teléfono</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									data-i18n-placeholder="form-phone-placeholder"
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="sector" data-i18n="form-sector"
+									>Sector de interés</label
+								>
+								<select id="sector" name="sector">
+									<option value="" data-i18n="form-sector-select">
+										Selecciona un sector
+									</option>
+									<option value="tecnologia" data-i18n="form-sector-tech">
+										Tecnología
+									</option>
+									<option value="servicios" data-i18n="form-sector-services">
+										Servicios Técnicos
+									</option>
+									<option value="negocio" data-i18n="form-sector-business">
+										Negocio Internacional
+									</option>
+									<option value="otro" data-i18n="form-sector-other">
+										Otro
+									</option>
+								</select>
+							</div>
+
+							<div class="form-group full-width">
+								<label for="message" data-i18n="form-message">Mensaje *</label>
+								<textarea
+									id="message"
+									name="message"
+									rows="6"
+									required
+									data-i18n-placeholder="form-message-placeholder"
+								></textarea>
+							</div>
+
+							<button type="submit" class="submit-btn" id="submitBtn">
+								<span data-i18n="form-submit">Enviar mensaje</span>
+							</button>
+
+							<div id="formStatus" class="form-status"></div>
+						</form>
+					</div>
+
+					<!-- Información de contacto -->
+					<div class="contact-info-container">
+						<div class="info-card">
+							<h3 data-i18n="contact-email-title">Email</h3>
+							<a href="mailto:contacto@rebollootion.com"
+								>contacto@rebollootion.com</a
+							>
+						</div>
+
+						<div class="info-card">
+							<h3 data-i18n="contact-locations-title">Nuestras oficinas</h3>
+							<div class="locations-list">
+								<div class="location-item">
+									<strong>España (HQ)</strong>
+									<p>Gorraiz, Navarra</p>
+								</div>
+								<div class="location-item">
+									<strong>España</strong>
+									<p>Algorta, Bizkaia</p>
+								</div>
+								<div class="location-item">
+									<strong>China</strong>
+									<p>Shanghai</p>
+								</div>
+								<div class="location-item">
+									<strong>India</strong>
+									<p>Chennai</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="info-card">
+							<h3 data-i18n="contact-response-title">Tiempo de respuesta</h3>
+							<p data-i18n="contact-response-text">
+								Respondemos en menos de 24 horas en días laborables
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div id="footer-placeholder"></div>
+
+		<script src="../assets/js/components.js"></script>
+		<script src="../assets/js/script.js"></script>
+		<script src="../assets/js/emailjs-config.js"></script>
+	</body>
+</html>

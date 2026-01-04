@@ -1,0 +1,222 @@
+<!-- Header Component -->
+<header>
+	<nav class="navbar">
+		<!-- Logo -->
+		<a href="../index.html" class="logo-link">
+			<img
+				src="../assets/logos/rebollootion-logo.png"
+				alt="Rebollootion"
+				class="logo-img"
+			/>
+		</a>
+
+		<!-- Hamburger Button (solo visible en móvil) -->
+		<button class="hamburger" aria-label="Toggle menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<!-- Nav Menu (se convierte en sidebar en móvil) -->
+		<div class="nav-menu">
+			<!-- Misión, Visión y Valores -->
+			<div class="nav-item">
+				<a href="../pages/mision.html" class="nav-link" data-i18n="menu-mission"
+					>Misión, Visión y Valores</a
+				>
+			</div>
+
+			<!-- Menú Proyectos (Dropdown de 2 niveles) -->
+			<div class="nav-item dropdown">
+				<button class="nav-link dropdown-toggle" data-i18n="menu-projects">
+					Proyectos
+					<svg
+						class="dropdown-arrow"
+						width="12"
+						height="12"
+						viewBox="0 0 12 12"
+						fill="currentColor"
+					>
+						<path d="M6 9L1 4h10z" />
+					</svg>
+				</button>
+				<div class="dropdown-content">
+					<!-- Tecnología -->
+					<div class="dropdown-item has-submenu">
+						<a href="../pages/tecnologia.html" data-i18n="menu-tech"
+							>Tecnología</a
+						>
+						<button class="submenu-toggle" aria-label="Toggle submenu">
+							›
+						</button>
+						<div class="submenu">
+							<a
+								href="../pages/tecnologia.html#hidrogeno"
+								data-i18n="menu-hydrogen"
+								>Hidrógeno</a
+							>
+							<a href="../pages/tecnologia.html#eolica" data-i18n="menu-wind"
+								>Eólica</a
+							>
+							<a href="../pages/tecnologia.html#solar" data-i18n="menu-solar"
+								>Fotovoltaica</a
+							>
+							<a
+								href="../pages/tecnologia.html#biomasa"
+								data-i18n="menu-biomass"
+								>Biomasa</a
+							>
+							<a
+								href="../pages/tecnologia.html#robotica"
+								data-i18n="menu-robotics"
+								>Robótica</a
+							>
+							<a
+								href="../pages/tecnologia.html#ciberseguridad"
+								data-i18n="menu-cyber"
+								>Ciberseguridad</a
+							>
+							<a
+								href="../pages/tecnologia.html#automatizacion"
+								data-i18n="menu-automation"
+								>Automatización</a
+							>
+							<a
+								href="../pages/tecnologia.html#movilidad"
+								data-i18n="menu-mobility"
+								>Movilidad</a
+							>
+						</div>
+					</div>
+
+					<!-- Servicios -->
+					<div class="dropdown-item has-submenu">
+						<a href="../pages/servicios.html" data-i18n="menu-services"
+							>Servicios</a
+						>
+						<button class="submenu-toggle" aria-label="Toggle submenu">
+							›
+						</button>
+						<div class="submenu">
+							<a
+								href="../pages/servicios.html#inspeccion"
+								data-i18n="menu-inspection"
+								>Inspección</a
+							>
+							<a
+								href="../pages/servicios.html#homologacion"
+								data-i18n="menu-homologation"
+								>Homologación</a
+							>
+							<a href="../pages/servicios.html#auditoria" data-i18n="menu-audit"
+								>Auditoría</a
+							>
+							<a
+								href="../pages/servicios.html#formacion"
+								data-i18n="menu-training"
+								>Formación</a
+							>
+						</div>
+					</div>
+
+					<!-- Negocio Internacional -->
+					<div class="dropdown-item has-submenu">
+						<a href="../pages/negocio.html" data-i18n="menu-business"
+							>Negocio Internacional</a
+						>
+						<button class="submenu-toggle" aria-label="Toggle submenu">
+							›
+						</button>
+						<div class="submenu">
+							<a
+								href="../pages/negocio.html#localizacion"
+								data-i18n="menu-localization"
+								>Localización</a
+							>
+							<a
+								href="../pages/negocio.html#outsourcing"
+								data-i18n="menu-outsourcing"
+								>Outsourcing</a
+							>
+							<a
+								href="../pages/negocio.html#colaboracion"
+								data-i18n="menu-collaboration"
+								>Colaboración Tecnológica</a
+							>
+							<a
+								href="../pages/negocio.html#aspiraciones"
+								data-i18n="menu-aspirations"
+								>Aspiraciones</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contacto -->
+			<div class="nav-item">
+				<a
+					href="../pages/contacto.html"
+					class="nav-link"
+					data-i18n="menu-contact"
+					>Contacto</a
+				>
+			</div>
+		</div>
+
+		<!-- Nav Controls (Idioma + Theme) -->
+		<div class="nav-controls">
+			<!-- Selector de idioma -->
+			<div class="lang-dropdown">
+				<button class="lang-btn-current" id="currentLang">
+					<span id="currentLangText">ES</span>
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+						<path d="M6 9L1 4h10z" />
+					</svg>
+				</button>
+				<div class="lang-dropdown-content">
+					<button class="lang-option active" data-lang="es">Español</button>
+					<button class="lang-option" data-lang="en">English</button>
+					<button class="lang-option" data-lang="cn">中文</button>
+				</div>
+			</div>
+
+			<!-- Theme Toggle -->
+			<button class="theme-toggle" aria-label="Toggle theme">
+				<svg
+					class="sun-icon"
+					width="20"
+					height="20"
+					viewBox="0 0 20 20"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<circle cx="10" cy="10" r="4" />
+					<line x1="10" y1="1" x2="10" y2="3" />
+					<line x1="10" y1="17" x2="10" y2="19" />
+					<line x1="1" y1="10" x2="3" y2="10" />
+					<line x1="17" y1="10" x2="19" y2="10" />
+					<line x1="3.5" y1="3.5" x2="5" y2="5" />
+					<line x1="15" y1="15" x2="16.5" y2="16.5" />
+					<line x1="16.5" y1="3.5" x2="15" y2="5" />
+					<line x1="5" y1="15" x2="3.5" y2="16.5" />
+				</svg>
+				<svg
+					class="moon-icon"
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+				</svg>
+			</button>
+		</div>
+	</nav>
+
+	<!-- Overlay para cerrar menú en móvil -->
+	<div class="mobile-overlay"></div>
+</header>
