@@ -7,12 +7,14 @@ footer {
 	border-top: 1px solid var(--border);
 	margin-top: 4rem;
 	transition: var(--transition-fast);
+	z-index: 10;
 }
 
 .footer-container {
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 3rem 2rem 2rem;
+	padding: 0rem 2rem 2rem;
+	background: var(--bg-secondary);
 }
 
 /* ============================================
@@ -21,7 +23,7 @@ footer {
 
 .footer-locations-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 2.5rem;
 	margin-bottom: 2rem;
 	padding-bottom: 2rem;
@@ -59,11 +61,11 @@ footer {
 
 .location-label {
 	font-family: "Space Grotesk", sans-serif;
-	font-size: 0.7rem;
+	font-size: 1.15rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	color: var(--text-secondary);
+	color: var(--text-primary);
 	margin-bottom: 0.75rem;
 }
 
@@ -76,7 +78,7 @@ footer {
 }
 
 .location-region {
-	font-size: 0.9rem;
+	font-size: 1.25rem;
 	color: var(--text-secondary);
 	font-weight: 400;
 	margin-bottom: 0.75rem;
@@ -88,7 +90,6 @@ footer {
 	color: var(--accent);
 	text-decoration: none;
 	transition: var(--transition-fast);
-	margin-top: 0.5rem;
 }
 
 .location-contact:hover {
@@ -119,15 +120,11 @@ footer {
    ============================================ */
 
 body:not(.light-mode) footer {
-	background: linear-gradient(
-		to bottom,
-		var(--bg-primary),
-		var(--bg-secondary)
-	);
+	background: var(--bg-secondary);
 }
 
 body.light-mode footer {
-	background: linear-gradient(to bottom, #fafafa, #f5f5f5);
+	background: #f5f5f5;
 }
 
 /* ============================================
@@ -142,14 +139,14 @@ body.light-mode footer {
 	}
 
 	.footer-container {
-		padding: 2.5rem 2rem 1.5rem;
+		padding: 0 2rem 1.5rem;
 	}
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 	.footer-container {
-		padding: 2rem 1.5rem 1.5rem;
+		padding: 0 1.5rem 1.5rem;
 	}
 
 	.footer-locations-grid {
