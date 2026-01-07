@@ -2,12 +2,16 @@
    FOOTER.CSS - Footer Profesional v3
    ============================================ */
 
+/* Footer */
 footer {
-	background: var(--bg-secondary);
+	position: relative;
+	background: var(--bg-secondary) !important;
+	padding: 3rem 2rem;
+	text-align: center;
 	border-top: 1px solid var(--border);
-	margin-top: 4rem;
+	color: var(--text-secondary);
 	transition: var(--transition-fast);
-	z-index: 10;
+	z-index: 20;
 }
 
 .footer-container {
