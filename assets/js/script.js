@@ -5,7 +5,7 @@
 // Configuración de idiomas
 const LANG_CONFIG = {
 	defaultLang: "en",
-	supportedLangs: ["es", "en", "cn", "hi"],
+	supportedLangs: ["es", "en", "fr", "cn", "hi"],
 };
 
 // Estado de la aplicación
