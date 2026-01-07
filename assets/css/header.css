@@ -20,20 +20,52 @@
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	transition: transform 0.3s ease;
 	flex-shrink: 0;
 	z-index: 1002;
 }
 
-.logo-link:hover {
-	transform: scale(1.05);
+/* Desactiva selección de texto */
+.logo-text {
+	font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+		sans-serif;
+	font-weight: 400;
+	font-size: 1.8rem;
+	letter-spacing: 0.07em;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
-.logo-img {
-	height: 50px;
-	width: auto;
-	max-width: 200px;
-	object-fit: contain;
+/* Degradado azul‑morado global */
+.logo-text-main,
+.logo-text-suffix {
+	background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* Si quieres degradar solo desde “rebollo” hacia “otion.” */
+.logo-text-main {
+	background: linear-gradient(90deg, #3b82f6, #6366f1);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.logo-text-suffix {
+	background: linear-gradient(90deg, #6366f1, #a855f7);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* Opcional: ajusta en móvil si antes usabas .logo-img */
+@media (max-width: 991px) {
+	.logo-text {
+		font-size: 1.3rem;
+	}
 }
 
 /* ============================================
