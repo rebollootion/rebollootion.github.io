@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Rebollootion - Servicios Técnicos: Inspección, homologación y auditoría"
+			content="Rebollootion - Servicios Técnicos: Inspección, homologación, formación y consultoría"
 		/>
 		<title>Servicios Técnicos | Rebollootion</title>
 		<link rel="stylesheet" href="../assets/css/styles.css" />
+		<link rel="stylesheet" href="../assets/css/pages.css" />
 		<link rel="stylesheet" href="../assets/css/header.css" />
 		<link rel="stylesheet" href="../assets/css/footer.css" />
 	</head>
@@ -18,128 +19,369 @@
 
 		<main class="subpage-main">
 			<div class="container">
+				<!-- Cabecera de página -->
 				<div class="subpage-header">
 					<h1 class="subpage-title" data-i18n="services-page-title">
 						Servicios Técnicos
 					</h1>
 					<p class="subpage-subtitle" data-i18n="services-page-subtitle">
-						Inspección, homologación y auditoría técnica de máxima calidad
+						Inspección, homologación, formación y consultoría de máxima calidad
 					</p>
 				</div>
 
-				<!-- SERVICIOS TÉCNICOS AVANZADOS -->
-				<section class="content-section">
-					<h2 class="section-title" data-i18n="services-section">
-						Servicios Técnicos Avanzados
+				<!-- Sección: INSPECCIÓN -->
+				<section class="sector-section">
+					<h2 class="sector-section-title" data-i18n="inspection-section">
+						Inspección
 					</h2>
 
-					<!-- Inspección -->
-					<div class="subsection" id="inspeccion">
-						<h3 class="subsection-title" data-i18n="inspection-title">
-							Inspección
-						</h3>
-						<p class="subsection-intro" data-i18n="inspection-intro">
-							Servicios de inspección técnica profesional con fotografía NDT y
-							documentación exhaustiva. Experiencia en Oil & Gas, construcción
-							civil e hidrología.
-						</p>
-						<div class="projects-grid">
-							<div class="project-card">
-								<h4 data-i18n="inspection-oilgas">Inspección Oil & Gas</h4>
-								<p data-i18n="inspection-oilgas-desc">
-									Inspección de instalaciones petroquímicas con técnicas NDT
-									avanzadas y termografía infrarroja.
-								</p>
-								<a href="#" class="project-link" data-i18n="view-portfolio"
-									>Ver portfolio →</a
-								>
+					<div class="sectors-grid">
+						<!-- Eólica, Solar e Hidráulica -->
+						<article class="sector-card" id="inspeccion-renovables">
+							<div class="sector-image">
+								<img
+									src="https://futuroelectrico.com/wp-content/uploads/2018/10/Tipos-de-energias-renovables-Solar-eolica-hidraulica.jpg"
+									alt="Inspección de energías renovables"
+								/>
 							</div>
-							<div class="project-card">
-								<h4 data-i18n="inspection-civil">Construcción Civil</h4>
-								<p data-i18n="inspection-civil-desc">
-									Inspección de estructuras, cimentaciones y obras civiles.
-									Informe técnico con fotografía detallada.
-								</p>
-								<a href="#" class="project-link" data-i18n="view-portfolio"
-									>Ver portfolio →</a
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="inspection-renewable-title">
+									Eólica, Solar e Hidráulica
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="inspection-renewable-desc"
 								>
-							</div>
-							<div class="project-card">
-								<h4 data-i18n="inspection-hydro">Hidrología</h4>
-								<p data-i18n="inspection-hydro-desc">
-									Inspección de infraestructuras hidráulicas, presas y sistemas
-									de tratamiento de aguas.
+									Inspección de generadores hidráulicos, aerogeneradores y
+									plantas de generación solar. Técnicas NDT avanzadas y
+									termografía infrarroja.
 								</p>
-								<a href="#" class="project-link" data-i18n="view-portfolio"
-									>Ver portfolio →</a
-								>
+								<ul class="sector-tags">
+									<li data-i18n="inspection-wind">Aerogeneradores</li>
+									<li data-i18n="inspection-solar">Plantas Solares</li>
+									<li data-i18n="inspection-hydro">Centrales Hidráulicas</li>
+								</ul>
 							</div>
-						</div>
-					</div>
+						</article>
 
-					<!-- Homologación -->
-					<div class="subsection" id="homologacion">
-						<h3 class="subsection-title" data-i18n="homologation-title">
-							Homologación
-						</h3>
-						<p class="subsection-intro" data-i18n="homologation-intro">
-							Gestión integral de procesos de homologación y certificación.
-							Asesoramiento en cumplimiento normativo nacional e internacional.
-						</p>
-						<div class="projects-grid">
-							<div class="project-card">
-								<h4 data-i18n="homologation-ce">Certificación CE</h4>
-								<p data-i18n="homologation-ce-desc">
-									Tramitación completa para marcado CE de maquinaria industrial
-									y productos electrónicos.
-								</p>
-								<a href="#" class="project-link" data-i18n="view-case"
-									>Ver casos →</a
-								>
+						<!-- Ferroviario y Civil -->
+						<article class="sector-card" id="inspeccion-civil">
+							<div class="sector-image">
+								<img
+									src="https://grupodsv.com/wp-content/uploads/2024/04/IMG-20240219-WA0016.jpg"
+									alt="Inspección ferroviaria y civil"
+								/>
 							</div>
-							<div class="project-card">
-								<h4 data-i18n="homologation-iso">ISO 9001 / 14001</h4>
-								<p data-i18n="homologation-iso-desc">
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="inspection-civil-title">
+									Ferroviario y Civil
+								</h3>
+								<p class="sector-description" data-i18n="inspection-civil-desc">
+									Inspección de componentes y estructuras metálicas mediante
+									técnicas de ultrasonidos, líquidos penetrantes y partículas
+									magnéticas.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="inspection-railway">
+										Infraestructura Ferroviaria
+									</li>
+									<li data-i18n="inspection-structures">
+										Estructuras Metálicas
+									</li>
+									<li data-i18n="inspection-ndt">NDT Avanzado</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- Oil & Gas, Nuclear -->
+						<article class="sector-card" id="inspeccion-industrial">
+							<div class="sector-image">
+								<img
+									src="https://www.newtral.es/wp-content/uploads/2022/07/1007906431-FF-CENTRAL-ENERGIA-NUCLEAR-ENGEL-AC-SHUTTERSTOCK-1024x576.jpg"
+									alt="Inspección Oil & Gas y Nuclear"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3
+									class="sector-title"
+									data-i18n="inspection-industrial-title"
+								>
+									Oil & Gas y Nuclear
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="inspection-industrial-desc"
+								>
+									Inspección de instalaciones petroquímicas y nucleares con
+									técnicas NDT avanzadas. Control de calidad exhaustivo y
+									certificación.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="inspection-oilgas">Petroquímica</li>
+									<li data-i18n="inspection-nuclear">Nuclear</li>
+									<li data-i18n="inspection-safety">Seguridad Industrial</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Sección: HOMOLOGACIÓN -->
+				<section class="sector-section">
+					<h2 class="sector-section-title" data-i18n="homologation-section">
+						Homologación
+					</h2>
+
+					<div class="sectors-grid">
+						<!-- Cualificación de inspectores -->
+						<article class="sector-card" id="homologacion-inspectores">
+							<div class="sector-image">
+								<img
+									src="https://www.logos3pl.com/wp-content/uploads/2021/06/all-you-need-to-know-about-quality-sorting-and-inspection-what-how-and-why-logos-logistics-1024x576.jpg"
+									alt="Cualificación de inspectores"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3
+									class="sector-title"
+									data-i18n="homologation-inspectors-title"
+								>
+									Cualificación de Inspectores de Calidad
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="homologation-inspectors-desc"
+								>
+									Programas de certificación y cualificación de inspectores
+									según normativas internacionales. Formación teórica y
+									práctica.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="homologation-iso">ISO 9712</li>
+									<li data-i18n="homologation-asme">ASME</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- Homologación de soldadores -->
+						<article class="sector-card" id="homologacion-soldadores">
+							<div class="sector-image">
+								<img
+									src="https://www.fempa.es/wp-content/uploads/2020/11/homologacion-soldadores.jpg"
+									alt="Homologación de soldadores"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="homologation-welders-title">
+									Homologación de Soldadores
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="homologation-welders-desc"
+								>
+									Certificación de soldadores según códigos internacionales.
+									Pruebas prácticas y evaluación de competencias técnicas.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="homologation-aws">AWS D1.1</li>
+									<li data-i18n="homologation-en">EN ISO 9606</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- Certificación de procesos -->
+						<article class="sector-card" id="homologacion-procesos">
+							<div class="sector-image">
+								<img
+									src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&auto=format&fit=crop"
+									alt="Certificación de procesos"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3
+									class="sector-title"
+									data-i18n="homologation-processes-title"
+								>
+									Certificación de Procesos de Soldadura
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="homologation-processes-desc"
+								>
+									Cualificación de procedimientos de soldadura (WPS/PQR).
+									Ensayos destructivos y no destructivos según normativa
+									aplicable.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="homologation-wps">WPS/PQR</li>
+									<li data-i18n="homologation-wpqr">WPQR</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Sección: FORMACIÓN -->
+				<section class="sector-section">
+					<h2 class="sector-section-title" data-i18n="training-section">
+						Formación
+					</h2>
+
+					<div class="sectors-grid">
+						<!-- Procesos de fabricación de composites -->
+						<article class="sector-card" id="formacion-composites">
+							<div class="sector-image">
+								<img
+									src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+									alt="Formación en composites"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="training-composites-title">
+									Procesos de Fabricación de Composites
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="training-composites-desc"
+								>
+									Formación especializada en técnicas de fabricación con
+									materiales compuestos. Laminado manual, infusión y autoclave.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="training-lamination">Laminado</li>
+									<li data-i18n="training-infusion">Infusión</li>
+									<li data-i18n="training-autoclave">Autoclave</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- Técnicas de soldadura -->
+						<article class="sector-card" id="formacion-soldadura">
+							<div class="sector-image">
+								<img
+									src="https://www.goodwin.edu/enews/wp-content/uploads/2023/03/4-welding-processes-and-procedures-tiny-scaled.jpg"
+									alt="Formación en soldadura"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="training-welding-title">
+									Técnicas de Soldadura
+								</h3>
+								<p class="sector-description" data-i18n="training-welding-desc">
+									Cursos de soldadura en diferentes procesos: TIG, MIG/MAG, arco
+									sumergido. Formación teórica y práctica con certificación.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="training-tig">TIG</li>
+									<li data-i18n="training-mig">MIG/MAG</li>
+									<li data-i18n="training-smaw">SMAW</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- Fabricación aditiva -->
+						<article class="sector-card" id="formacion-aditiva">
+							<div class="sector-image">
+								<img
+									src="https://www.3dcity.com.mx/cdn/shop/articles/impresoras-3d-2022.jpg?v=1713250828&width=1100"
+									alt="Formación en fabricación aditiva"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="training-additive-title">
+									Fabricación Aditiva
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="training-additive-desc"
+								>
+									Cursos de impresión 3D industrial. Tecnologías FDM, SLA, SLS y
+									aplicaciones en ingeniería y prototipado rápido.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="training-3d">Impresión 3D</li>
+									<li data-i18n="training-prototyping">Prototipado</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- Sección: CONSULTORÍA -->
+				<section class="sector-section">
+					<h2 class="sector-section-title" data-i18n="consulting-section">
+						Consultoría
+					</h2>
+
+					<div class="sectors-grid">
+						<!-- Sistemas de gestión de calidad -->
+						<article class="sector-card" id="consultoria-calidad">
+							<div class="sector-image">
+								<img
+									src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop"
+									alt="Consultoría en calidad"
+								/>
+							</div>
+							<div class="sector-content">
+								<h3 class="sector-title" data-i18n="consulting-quality-title">
+									Sistemas de Gestión de Calidad
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="consulting-quality-desc"
+								>
 									Consultoría para implementación y certificación de sistemas de
-									gestión de calidad y medio ambiente.
+									gestión de calidad ISO 9001. Auditorías internas y formación.
 								</p>
-								<a href="#" class="project-link" data-i18n="view-case"
-									>Ver casos →</a
-								>
+								<ul class="sector-tags">
+									<li data-i18n="consulting-iso9001">ISO 9001</li>
+									<li data-i18n="consulting-audit">Auditorías</li>
+								</ul>
 							</div>
-						</div>
-					</div>
+						</article>
 
-					<!-- Auditoría -->
-					<div class="subsection" id="auditoria">
-						<h3 class="subsection-title" data-i18n="audit-title">Auditoría</h3>
-						<p class="subsection-intro" data-i18n="audit-intro">
-							Auditorías técnicas especializadas en proyectos industriales y
-							tecnológicos. Análisis de riesgos y optimización de procesos.
-						</p>
-						<div class="projects-grid">
-							<div class="project-card">
-								<h4 data-i18n="audit-energy">Auditoría Energética</h4>
-								<p data-i18n="audit-energy-desc">
-									Análisis de eficiencia energética industrial con plan de
-									mejora y ROI estimado.
-								</p>
-								<a href="#" class="project-link" data-i18n="view-report"
-									>Ver informes →</a
-								>
+						<!-- Optimización de procesos -->
+						<article class="sector-card" id="consultoria-optimizacion">
+							<div class="sector-image">
+								<img
+									src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop"
+									alt="Optimización de procesos"
+								/>
 							</div>
-							<div class="project-card">
-								<h4 data-i18n="audit-due">Due Diligence Técnica</h4>
-								<p data-i18n="audit-due-desc">
-									Evaluación técnica exhaustiva para operaciones de M&A en
-									sector industrial y tecnológico.
-								</p>
-								<a href="#" class="project-link" data-i18n="view-report"
-									>Ver informes →</a
+							<div class="sector-content">
+								<h3
+									class="sector-title"
+									data-i18n="consulting-optimization-title"
 								>
+									Optimización de Procesos Industriales
+								</h3>
+								<p
+									class="sector-description"
+									data-i18n="consulting-optimization-desc"
+								>
+									Análisis y mejora de procesos productivos. Implementación de
+									metodologías Lean y Six Sigma para incrementar eficiencia.
+								</p>
+								<ul class="sector-tags">
+									<li data-i18n="consulting-lean">Lean Manufacturing</li>
+									<li data-i18n="consulting-sixsigma">Six Sigma</li>
+								</ul>
 							</div>
-						</div>
+						</article>
 					</div>
+				</section>
+
+				<!-- CTA final -->
+				<section class="cta-section">
+					<h2 class="section-title" data-i18n="contact-title">
+						¿Necesitas nuestros servicios?
+					</h2>
+					<p class="section-subtitle" data-i18n="contact-description">
+						Contacta con nuestro equipo para conocer cómo podemos ayudarte.
+					</p>
+					<a href="./contacto.html" class="cta-button" data-i18n="cta-button">
+						Contáctanos
+					</a>
 				</section>
 			</div>
 		</main>
