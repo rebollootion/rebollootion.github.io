@@ -212,6 +212,36 @@
 }
 
 /* ============================================
+
+   BUSINESS PAGE STYLES
+   Specific adjustments for Negocio page using Sector Layout
+
+============================================ */
+
+/* Asegurar espaciado correcto en la página de negocio */
+#business-page .sector-section {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Ajuste específico para las tarjetas de negocio si se requiere diferenciarlas sutilmente */
+#business-page .sector-card {
+    border-color: var(--border); /* Asegura borde sutil por defecto */
+}
+
+#business-page .sector-card:hover {
+    border-color: var(--accent); /* Mantiene el hover de acento */
+}
+
+/* Placeholder visual para imágenes si no cargan (Gris azulado profesional) */
+#business-page .sector-image {
+    background: linear-gradient(135deg, #f0f4f8 0%, #dbeafe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================
    VALUES GRID - Remove icon styling
    ============================================ */
 
