@@ -119,6 +119,99 @@
 }
 
 /* ============================================
+
+   MISSION PAGE STYLES (Unique Fixes)
+   Fixes spacing inconsistencies and values layout
+
+============================================ */
+
+/* 1. Reset y corrección de espaciados para esta página */
+#mission-page .content-section {
+    margin-bottom: 4rem;
+}
+
+#mission-page .section-header-wrapper {
+    margin-bottom: 2rem;
+    text-align: left; /* Alineación consistente */
+}
+
+#mission-page .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    display: inline-block;
+    width: 100%;
+}
+
+#mission-page .section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#mission-page .section-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+	text-align: center;
+	text-wrap: balance;
+}
+
+/* 2. Estilos para la lista de valores (Líneas en vez de cuadrados) */
+#mission-page .values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+#mission-page .value-card-row {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#mission-page .value-card-row:hover {
+    border-color: var(--accent);
+    transform: translateX(5px); /* Efecto sutil lateral en lugar de salto vertical */
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.1);
+}
+
+#mission-page .value-card-row .value-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    position: relative;
+}
+
+#mission-page .value-card-row .value-description {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Ajuste Responsive */
+@media (max-width: 768px) {
+    #mission-page .section-title {
+        font-size: 1.75rem;
+    }
+    
+    #mission-page .value-card-row {
+        padding: 1.5rem;
+    }
+}
+
+/* ============================================
    VALUES GRID - Remove icon styling
    ============================================ */
 

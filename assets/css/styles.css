@@ -620,9 +620,11 @@ footer {
 .subpage-subtitle {
 	font-size: 1.2rem;
 	color: var(--text-secondary);
-	max-width: 700px;
+	max-width: 900px;
 	margin: 0 auto;
 	line-height: 1.7;
+	text-align: center;
+	text-wrap: balance;
 }
 
 /* Sector Sections */

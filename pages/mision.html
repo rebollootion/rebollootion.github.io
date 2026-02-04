@@ -26,8 +26,8 @@
 		<!-- Header Component -->
 		<div id="header-placeholder"></div>
 
-		<!-- Main content -->
-		<main class="subpage-main">
+		<!-- Main content: Añadido ID único para aislar estilos -->
+		<main id="mission-page" class="subpage-main">
 			<div class="container">
 				<!-- Page header -->
 				<div class="subpage-header">
@@ -41,8 +41,8 @@
 				</div>
 
 				<!-- Mission Section -->
-				<section class="content-section">
-					<div class="section-header">
+				<section class="content-section mission-unique-block">
+					<div class="section-header-wrapper">
 						<h2 class="section-title" data-i18n="mission-title">Our Mission</h2>
 					</div>
 					<p class="section-description" data-i18n="mission-description">
@@ -56,8 +56,8 @@
 				</section>
 
 				<!-- Vision Section -->
-				<section class="content-section">
-					<div class="section-header">
+				<section class="content-section mission-unique-block">
+					<div class="section-header-wrapper">
 						<h2 class="section-title" data-i18n="vision-title">Our Vision</h2>
 					</div>
 					<p class="section-description" data-i18n="vision-description">
@@ -71,20 +71,21 @@
 				</section>
 
 				<!-- Values Section -->
-				<section class="content-section">
-					<div class="section-header">
+				<section class="content-section mission-unique-block">
+					<div class="section-header-wrapper">
 						<h2 class="section-title" data-i18n="values-title">
 							Our Core Values
 						</h2>
-						<p class="section-subtitle" data-i18n="values-subtitle">
+						<p class="section-description" data-i18n="values-subtitle">
 							Six fundamental principles that define our organizational culture
 							and commitment
 						</p>
 					</div>
 
-					<div class="values-grid">
+					<!-- Cambiado de values-grid a values-list para diseño en líneas -->
+					<div class="values-list">
 						<!-- Innovation -->
-						<div class="value-card">
+						<div class="value-card-row">
 							<h3 class="value-title" data-i18n="value-innovation-title">
 								Innovation
 							</h3>
@@ -97,7 +98,7 @@
 						</div>
 
 						<!-- Quality -->
-						<div class="value-card">
+						<div class="value-card-row">
 							<h3 class="value-title" data-i18n="value-quality-title">
 								Quality
 							</h3>
@@ -110,7 +111,7 @@
 						</div>
 
 						<!-- Sustainability -->
-						<div class="value-card">
+						<div class="value-card-row">
 							<h3 class="value-title" data-i18n="value-sustainability-title">
 								Sustainability
 							</h3>
@@ -126,7 +127,7 @@
 						</div>
 
 						<!-- Collaboration -->
-						<div class="value-card">
+						<div class="value-card-row">
 							<h3 class="value-title" data-i18n="value-collaboration-title">
 								Collaboration
 							</h3>
@@ -136,59 +137,14 @@
 								all parties contribute and grow together.
 							</p>
 						</div>
-
-						<!-- Trust
-						<div class="value-card">
-							<h3 class="value-title" data-i18n="value-trust-title">Trust</h3>
-							<p class="value-description" data-i18n="value-trust-desc">
-								We build long-term relationships based on transparency, honesty
-								and commitment. Trust is earned through consistent delivery and
-								ethical business practices across all operations.
-							</p>
-						</div>
-
-						Global Vision
-						<div class="value-card">
-							<h3 class="value-title" data-i18n="value-global-title">
-								Global Vision
-							</h3>
-							<p class="value-description" data-i18n="value-global-desc">
-								We understand local markets with international perspective,
-								connecting cultures and opportunities. Our presence across
-								Europe and Asia enables us to bridge markets and facilitate
-								global growth.
-							</p>
-						</div>-->
 					</div>
 				</section>
-
-				<!-- Commitment Section
-				<section class="content-section commitment-section">
-					<div class="section-header">
-						<h2 class="section-title" data-i18n="commitment-title">
-							Our Commitment
-						</h2>
-					</div>
-					<p class="section-description" data-i18n="commitment-description">
-						At Rebollution, we are committed to delivering solutions that make a
-						real difference. We measure our success not just by project
-						completion, but by the lasting impact we create for our clients,
-						partners and the communities we serve. Our mission is to be a
-						trusted partner in your technological transformation journey. When
-						you choose Rebollution, you choose a partner dedicated to your
-						success and the sustainable future we build together.
-					</p>
-				</section> -->
 
 				<!-- CTA Section -->
 				<section class="cta-section">
 					<h2 class="section-title" data-i18n="cta-mission-title">
 						Ready to Transform Your Technology?
 					</h2>
-					<!-- <p class="section-subtitle" data-i18n="cta-mission-desc">
-						Join us in building sustainable, innovative solutions that create
-						real value.
-					</p> -->
 					<a
 						href="./contacto.html"
 						class="cta-button"
